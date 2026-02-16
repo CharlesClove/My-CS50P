@@ -1,3 +1,4 @@
 def einstein(mass):
-    return mass*math.sqr(300000000,2)
+    c_to_2 = pow(300000000,2)
+    return mass * c_to_2
 print(einstein(input()))
