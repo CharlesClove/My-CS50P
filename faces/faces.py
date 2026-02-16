@@ -1,7 +1,7 @@
 def swap(string):
-    string.replace(":)","😊")
-    string.replace(":(","☹️")
-    print(string)
-    return string
+    swapped_string = string.replace(":)","😊")
+    swapped_string = string.replace(":(","☹️")
+    print(swapped_string)
+    return swapped_string
 
 print(swap(input()))
