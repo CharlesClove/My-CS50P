@@ -1,1 +1,4 @@
-print(input().replace(":)" + ":(","😊" + "☹️")"))
+def swap(string):
+    return string
+
+print(swap(input()))
