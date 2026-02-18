@@ -6,6 +6,6 @@ def the_deep_anwser(user_input):
     else:
         print('No')
 
-user_input = (input("What is the Answer to the Great Question of Life, the Universe, and Everything? "))
+user_input = (input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")).strip()
 the_deep_anwser(user_input)
 
