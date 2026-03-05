@@ -13,5 +13,4 @@ def math_interpreter(question):
 
 question = input("Expression: ")
 solution = math_interpreter(question)
-#solution = float(math_interpreter(question))
-print(f"{solution}")
+print(f"{solution:.1f}")
