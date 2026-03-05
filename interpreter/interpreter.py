@@ -1,7 +1,10 @@
 
 def math_interpreter(question):
-    return question
+    list_of_characters = question.split(" ")
+    list_of_characters.sort()
+    return list_of_characters
 
 question = input("Expression: ")
-solution = float(math_interpreter(question))
-print(f"{solution:.1f}")
+solution = math_interpreter(question)
+#solution = float(math_interpreter(question))
+print(f"{solution}")
