@@ -2,8 +2,8 @@
 def math_interpreter(question):
     list_of_characters = question.split(" ")
     if len(list_of_characters) == 3:
-        list_of_characters.sort()
-        
+        match list_of_characters[1]:
+            case '+': return float(list_of_characters[0])+float(list_of_characters[2])
         return list_of_characters
     else:
         return "invalid expression"
