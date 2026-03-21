@@ -4,8 +4,8 @@ def swap_to_snake(txt):
         print(f"iteration numer: {iteration}")
         if txt[iteration].isupper():
             snake_text += "".join(txt[iteration].replace(f"{txt[iteration]}", f"_{txt[iteration].lower()}"))
-
-        snake_text += "".join(txt[iteration])
+        else:
+            snake_text += "".join(txt[iteration])
         print(f"snake - {snake_text}")
     print(f"snake_case: {snake_text}")
 
