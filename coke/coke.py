@@ -5,7 +5,7 @@ def countdown():
     while price > 0:
         print(f"Amount Due: {price}")
         money = input("Insert Coin: ")
-        if money == "" or money == 30:
+        if money == "" or int(money) == 30:
             money = 0
         price -= int(money)
 
