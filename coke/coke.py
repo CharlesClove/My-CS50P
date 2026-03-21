@@ -4,10 +4,10 @@ def countdown():
     price = 50
     while price > 0:
         print(f"Amount Due: {price}")
-        money = int(input("Insert Coin: "))
-        if money is None or money is str:
+        money = input("Insert Coin: ")
+        if money == "":
             money = 0
-        price -= money
+        price -= int(money)
 
     if price <= 0:
         print(f"Change Owed: {price*(-1)}")
