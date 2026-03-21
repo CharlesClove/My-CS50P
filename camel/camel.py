@@ -1,7 +1,8 @@
 def swap_to_snake(txt):
     for iteration in range(len(txt)):
         if txt[iteration].isupper():
-            txt[iteration].replace(f"{txt[iteration]}", f"_{txt[iteration].tolower()}")
+            
+            txt[iteration].replace(f"{txt[iteration]}", f"_")
             print(txt)
 
 def main():
