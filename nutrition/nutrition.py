@@ -7,7 +7,10 @@ Fruits = {
 }
 
 def is_fruit(s):
-    print(Fruits.)
-    print(Fruits.values())
-    print(Fruits)
-is_fruit('a')
+   for name, kcal in Fruits.items():
+      if s != name :
+         pass
+      else:
+         print(f"Calories: {kcal}")
+
+is_fruit(input("Item: "))
