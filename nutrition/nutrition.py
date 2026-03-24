@@ -7,5 +7,5 @@ Fruits = {
 }
 
 def is_fruit(s):
-    print(Fruits.keys())
+    print(list(Fruits))
 is_fruit('a')
