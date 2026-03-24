@@ -12,5 +12,6 @@ def is_fruit(s):
          pass
       else:
          print(f"Calories: {kcal}")
-
-is_fruit(input("Item: "))
+s = input("Item: ")
+s = s.lower()
+is_fruit(s)
