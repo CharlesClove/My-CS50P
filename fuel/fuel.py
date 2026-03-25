@@ -1,9 +1,13 @@
 def fuel(percent):
-    try
+
     ...
 def main():
-    amount = input("Fraction: ")
-    x, y = amount.split('/')
-    amount = (float(x)/float(y))*100
+    try:
+        amount = input("Fraction: ")
+        x, y = amount.split('/')
+        amount = (float(x)/float(y))*100
+    except(ValueError):
+        
     fuel(amount)
+
 main()
