@@ -1,14 +1,14 @@
 def fuel(percent):
-
+    
     ...
 def main():
     try:
         amount = input("Fraction: ")
         x, y = amount.split('/')
         amount = (float(x)/float(y))*100
-    except(ValueError):
-        if isinstance(amount,float) != True:
-            
+    except ValueError:
+        print(f"{amount} is not a float'able")
+
 
     fuel(amount)
 
