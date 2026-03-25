@@ -7,7 +7,7 @@ def main():
         x, y = amount.split('/')
         amount = (float(x)/float(y))*100
     except(ValueError):
-        
+        if isinstance(amount,float)
     fuel(amount)
 
 main()
