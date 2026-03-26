@@ -2,14 +2,15 @@ def fuel(amount):
     p = round(amount)
 
     if p >= 99:
-        print("F")
+        return ("F")
     elif p <= 1:
-        print("E")
+        return ("E")
     else:
-        print(f"{p}%")
+        return (f"{p}%")
 
 
 def main():
+    
     while(True):
         try:
             amount = input("Fraction: ")
@@ -20,7 +21,7 @@ def main():
                 pass
         except ValueError:
             pass
-        fuel(amount)
+        fuel(amount))
 
 
 main()
