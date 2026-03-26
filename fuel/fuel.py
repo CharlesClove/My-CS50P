@@ -17,11 +17,11 @@ def main():
             try:
                 amount = (float(x)/float(y))*100
             except ZeroDivisionError:
-                print("zero division")
+                pass
         except ValueError:
-            print("Value")
-            
+            pass
+        break
 
-    result = fuel(amount)
+    print(fuel(amount))
 
 main()
