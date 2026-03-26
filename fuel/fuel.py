@@ -13,6 +13,8 @@ def main():
         try:
             amount = input("Fraction: ")
             x, y = amount.split('/')
+            x = float(x)
+            y = float(y)
             amount = (float(x)/float(y))*100
             print(f"{amount}  {type(amount)}")
         except (ValueError,ZeroDivisionError):
