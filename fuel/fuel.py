@@ -19,10 +19,7 @@ def main():
                 raise ValueError
             elif x > y:
                 raise ValueError
-            elif x.is_integer() != True:
-                raise ValueError
-            elif y.is_integer() != True
-                raise ValueError
+
             amount = (float(x)/float(y))*100
             #print(f"{amount}  {type(amount)}")
         except (ValueError,ZeroDivisionError):
