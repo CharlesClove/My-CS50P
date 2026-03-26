@@ -1,5 +1,5 @@
 def fuel(amount):
-    percent = int(round(amount))
+    percent = int(amount)
     if percent >= 99:
         print("F")
     elif percent <= 1:
@@ -11,9 +11,9 @@ def main():
     try:
         amount = input("Fraction: ")
         x, y = amount.split('/')
-        amount = (float(x)/float(y))*100
+        amount = round((float(x)/float(y))*100)
     except (ValueError, ZeroDivisionError):
-        print("")
+        pass
     fuel(amount)
 
 main()
