@@ -1,12 +1,11 @@
 def fuel(amount):
-    p = round(amount)
-
-    if p >= 99:
+    print(f"2 {amount}  {type(amount)}")
+    if amount >= 99:
         return ("F")
-    elif p <= 1:
+    elif amount <= 1:
         return ("E")
     else:
-        return (f"{p}%")
+        return (f"{amount}%")
 
 
 def main():
@@ -16,6 +15,7 @@ def main():
             x, y = amount.split('/')
             try:
                 amount = (float(x)/float(y))*100
+                print(f"{amount}  {type(amount)}")
             except ZeroDivisionError:
                 pass
         except ValueError:
