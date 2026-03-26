@@ -15,9 +15,7 @@ def main():
             x, y = amount.split('/')
             x = float(x)
             y = float(y)
-            if x < 0:
-                raise ValueError
-            elif x > y:
+            if x < 0 && x > y && x.is_integer() != True && y.is_integer() != True:
                 raise ValueError
             amount = (float(x)/float(y))*100
             #print(f"{amount}  {type(amount)}")
