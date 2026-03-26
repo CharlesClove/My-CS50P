@@ -10,7 +10,6 @@ def fuel(amount):
 
 
 def main():
-    
     while(True):
         try:
             amount = input("Fraction: ")
@@ -21,7 +20,7 @@ def main():
                 pass
         except ValueError:
             pass
-        fuel(amount))
 
+    result = fuel(amount)
 
 main()
