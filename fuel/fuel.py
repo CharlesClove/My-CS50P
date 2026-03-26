@@ -11,7 +11,8 @@ def main():
     try:
         amount = input("Fraction: ")
         x, y = amount.split('/')
-        amount = round((float(x)/float(y))*100)
+        if x > 0 and y > 0:
+            amount = round((float(x)/float(y))*100)
     except (ValueError, ZeroDivisionError):
         pass
     fuel(amount)
