@@ -1,13 +1,12 @@
 def fuel(amount):
-    percent = int(amount)
-    if percent >= 99:
+    p = round(amount)
+
+    if p >= 99:
         print("F")
-
-    elif percent <= 1:
+    elif p <= 1:
         print("E")
-
     else:
-        print(f"{percent}%")
+        print(f"{p}%")
 
 
 def main():
@@ -21,7 +20,6 @@ def main():
                 pass
         except ValueError:
             pass
-
         fuel(amount)
 
 
