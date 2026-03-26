@@ -17,9 +17,10 @@ def main():
             try:
                 amount = (float(x)/float(y))*100
             except ZeroDivisionError:
-                pass
+                print("zero division")
         except ValueError:
-            pass
+            print("Value")
+            
 
     result = fuel(amount)
 
