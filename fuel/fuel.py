@@ -13,11 +13,11 @@ def main():
         try:
             amount = input("Fraction: ")
             x, y = amount.split('/')
-            x = round(float(x))
+            x = float(x)
             y = float(y)
             if x < 0:
                 raise ValueError
-            elif x>y:
+            elif x > y:
                 raise ValueError
             amount = (float(x)/float(y))*100
             #print(f"{amount}  {type(amount)}")
