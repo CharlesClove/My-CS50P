@@ -13,7 +13,7 @@ def main():
         try:
             amount = input("Fraction: ")
             x, y = amount.split('/')
-            x = float(x)
+            x = round(float(x))
             y = float(y)
             if x < 0:
                 raise ValueError
