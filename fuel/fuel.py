@@ -1,5 +1,5 @@
 def fuel(amount):
-    print(f"2 {amount}  {type(amount)}")
+    print(f"3 {amount}  {type(amount)}")
     if amount >= 99:
         return ("F")
     elif amount <= 1:
@@ -13,15 +13,13 @@ def main():
         try:
             amount = input("Fraction: ")
             x, y = amount.split('/')
-            try:
-                amount = (float(x)/float(y))*100
-                print(f"{amount}  {type(amount)}")
-            except ZeroDivisionError:
-                pass
-        except ValueError:
-            pass
+            amount = (float(x)/float(y))*100
+            print(f"{amount}  {type(amount)}")
+        except (ValueError,ZeroDivisionError):
+            print(f"2 {amount}  {type(amount)}")
+            break
         break
-
-    print(fuel(amount))
+    print(f"3{amount}  {type(amount)}")
+    #print(fuel(amount))
 
 main()
