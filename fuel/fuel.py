@@ -1,6 +1,12 @@
-def fuel(percent):
-    print(f"{int(round(percent))}%")
-    ...
+def fuel(amount):
+    percent = int(round(amount))
+    if percent >= 99:
+        print("F")
+    elif percent <= 1:
+        print("E")
+    else:
+        print(f"{percent}%")
+
 def main():
     try:
         amount = input("Fraction: ")
