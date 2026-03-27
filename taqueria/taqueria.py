@@ -2,7 +2,8 @@ def main():
     while(True):
         try:
             order = input("Item: ")
-            
+            for menu_item in Menu.Keys():
+                if menu_item
         except ValueError:
         break
 
