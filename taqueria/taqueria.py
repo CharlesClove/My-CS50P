@@ -20,7 +20,7 @@ def main():
                 raise ValueError
             order_value = Menu.get(order)
             total = total + order_value
-            print(f"Total: {total}")
+            print(f"Total: ${total}")
         except ValueError:
             continue
         except EOFError:
