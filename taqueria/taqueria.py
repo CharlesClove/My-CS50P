@@ -10,10 +10,6 @@ Menu = {
     "Tortilla Salad": 8.00
 }
 
-def calculate_order(order, total):
-    print(Menu.keys()[Menu.values().index()])
-
-
 def main():
     while(True):
         total=0.
@@ -22,12 +18,11 @@ def main():
             if order not in Menu.keys():
                 print(f"{order}")
                 raise ValueError
-            else:
-                index = Menu.keys().index(order)
         except ValueError:
             print(f"Wrong Value")
             continue
-        calculate_order(order, total, index)
+
+        
 
 
 
