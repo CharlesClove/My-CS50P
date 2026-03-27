@@ -11,7 +11,7 @@ Menu = {
 }
 
 def calculate_order(order, total):
-    print(Menu.keys()[Menu.values()])
+    print(Menu.keys()[Menu.values().index()])
 
 
 def main():
@@ -22,6 +22,8 @@ def main():
             if order not in Menu.keys():
                 print(f"{order}")
                 raise ValueError
+            else:
+                
         except ValueError:
             print(f"Wrong Value")
             continue
