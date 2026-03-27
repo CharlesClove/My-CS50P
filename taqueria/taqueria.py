@@ -21,10 +21,10 @@ def main():
             elif order in Menu.keys():
                 total += Menu.get(order)
                 print(total)
-        except ValueError:
+        except (ValueError, EOFError):
             continue
 
-        
+
 
 
 
