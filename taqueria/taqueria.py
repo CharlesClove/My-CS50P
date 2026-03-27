@@ -2,10 +2,9 @@ def main():
     while(True):
         try:
             order = input("Item: ")
-            for menu_item in Menu.keys():
-                if order != menu_item:
-                    print(f"{order} - {menu_item}")
-                    raise ValueError
+            if order != Menu.keys():
+                print(f"{order} - {}")
+                raise ValueError
         except ValueError:
             print(f"Wrong Value")
             continue
