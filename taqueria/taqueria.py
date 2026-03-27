@@ -11,11 +11,10 @@ Menu = {
 }
 
 def calculate_order(order, total):
-    
+    print(Menu.keys()[Menu.values()])
 
 
 def main():
-    print(Menu.values())
     total=0.
     while(True):
         try:
