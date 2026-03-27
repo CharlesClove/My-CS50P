@@ -11,8 +11,8 @@ Menu = {
 }
 
 def calculate_order(order, total):
-    if order in Menu.keys():
-        pass
+    
+
 
 def main():
     print(Menu.values())
