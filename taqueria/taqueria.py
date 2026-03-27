@@ -13,6 +13,7 @@ Menu = {
 def main():
     total=0.
     while(True):
+        print(total)
         try:
             order = input("Item: ")
             if order not in Menu.keys():
