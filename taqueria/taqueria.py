@@ -18,11 +18,13 @@ def main():
             if order not in Menu.keys():
                 print(f"{order}")
                 raise ValueError
+            elif order in Menu.keys():
+                
         except ValueError:
             print(f"Wrong Value")
             continue
 
-        
+
 
 
 
