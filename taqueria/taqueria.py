@@ -19,9 +19,8 @@ def main():
             if order not in Menu.keys():
                 print(f"{order}")
                 raise ValueError
-            elif order in Menu.keys():
-                total += Menu.get(order)
-                print(total)
+            order_value = Menu.get(order)
+            total = total + order_value
         except ValueError:
             continue
         except EOFError:
