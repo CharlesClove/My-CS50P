@@ -15,19 +15,19 @@ def calculate_order(order, total):
 
 
 def main():
-    total=0.
     while(True):
+        total=0.
         try:
             order = input("Item: ")
             if order not in Menu.keys():
                 print(f"{order}")
                 raise ValueError
             else:
-                
+                index = Menu.keys().index(order)
         except ValueError:
             print(f"Wrong Value")
             continue
-        calculate_order(order, total)
+        calculate_order(order, total, index)
 
 
 
