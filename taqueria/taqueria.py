@@ -10,10 +10,13 @@ Menu = {
     "Tortilla Salad": 8.00
 }
 
-def calculate_order(order):
-    
+def calculate_order(order, total):
+    if order in Menu.keys():
+        pass
 
 def main():
+    print(Menu.values())
+    total=0.
     while(True):
         try:
             order = input("Item: ")
@@ -23,7 +26,7 @@ def main():
         except ValueError:
             print(f"Wrong Value")
             continue
-        calculate_order(order)
+        calculate_order(order, total)
 
 
 
