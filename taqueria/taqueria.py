@@ -3,8 +3,10 @@ def main():
         try:
             order = input("Item: ")
             for menu_item in Menu.Keys():
-                if menu_item 
+                if order != menu_item:
+                    raise ValueError:
         except ValueError:
+            continue
         break
 
     pass
