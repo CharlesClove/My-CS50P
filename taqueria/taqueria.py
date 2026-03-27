@@ -17,7 +17,7 @@ def main():
         try:
             order = input("Item: ")
             if order not in Menu.keys():
-                print(f"{order}")
+                print(f"Value Error dla {order}")
                 raise ValueError
             order_value = Menu.get(order)
             total = total + order_value
