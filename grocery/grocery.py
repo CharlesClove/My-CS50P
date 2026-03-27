@@ -3,9 +3,9 @@ def main():
         try:
             counter = 1
             list_item = input("Item: ")
-            order = append(f"{}{list_item.upper()}")
-        except ValueError:
-            continue
+            grocery_list = append(f"{counter}{list_item.upper()}")
+            for item in grocery_list:
+                print(item)
         except EOFError:
             break
 
