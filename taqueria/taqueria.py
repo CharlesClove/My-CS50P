@@ -1,4 +1,11 @@
 def main():
+    while(True):
+        try:
+            order = input("Item: ")
+            
+        except ValueError:
+        break
+
     pass
 Menu = {
     "Baja Taco": 4.25,
