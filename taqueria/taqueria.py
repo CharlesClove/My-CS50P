@@ -13,12 +13,10 @@ Menu = {
 def main():
     total=0.
     while(True):
-        print(total)
         try:
             order_input = input("Item: ")
             order = order_input.title()
             if order not in Menu.keys():
-                print(f"Value Error dla {order}")
                 raise ValueError
             order_value = Menu.get(order)
             total = total + order_value
