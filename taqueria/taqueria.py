@@ -2,14 +2,15 @@ def main():
     while(True):
         try:
             order = input("Item: ")
-            for menu_item in Menu.Keys():
+            for menu_item in Menu.keys():
                 if order != menu_item:
-                    raise ValueError:
+                    print(f"{order} - {menu_item}")
+                    raise ValueError
         except ValueError:
+            print(f"Wrong Value")
             continue
-        break
 
-    pass
+
 Menu = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
