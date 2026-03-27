@@ -11,7 +11,7 @@ Menu = {
 }
 
 def main():
-    total=0.
+    total=0.00
     while(True):
         try:
             order_input = input("Item: ")
