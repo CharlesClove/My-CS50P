@@ -16,7 +16,7 @@ def main():
         print(total)
         try:
             order = input("Item: ")
-            if order not in Menu.keys():
+            if order.capitalize() not in Menu.keys():
                 print(f"Value Error dla {order}")
                 raise ValueError
             order_value = Menu.get(order)
