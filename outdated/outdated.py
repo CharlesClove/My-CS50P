@@ -16,6 +16,9 @@ Months = [
 def main():
     while(True):
         try:
+            date_input = input("Date: ")
+            
+
         except (EOFError, ValueError):
             break
 
