@@ -10,7 +10,8 @@ def main():
                 g_list.setdefault(g_item,1)
         except EOFError:
             break
+        dict(sorted(g_list))
     for l_item in g_list:
-        print
+        print(f"{g_list.get(l_item)} ")
 
 main()
