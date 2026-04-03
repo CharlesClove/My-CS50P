@@ -56,7 +56,8 @@ def main():
                 if 1 <= m <= 12 and 1 <= d <= 31:
                     print(y, f'{m:02}',f'{d:02}', sep="-")
                     break
-
+        except ErrorValue:
+            continue
         except (EOFError):
             break
 main()
