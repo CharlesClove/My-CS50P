@@ -23,7 +23,7 @@ def main():
             if len(date_input) != 3:
                 print("wrong format")
                 raise ValueError
-            
+            if 
 
         except ValueError:
             continue
