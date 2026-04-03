@@ -11,7 +11,7 @@ def main():
         except EOFError:
             break
     sorted_dic = dict(sorted(g_list.items()))
-    for item, count in sorted_dic:
-        print("{} {}".format(count, item))
+    for item, amount in sorted_dic:
+        print("{} {}".format(amount, item))
 
 main()
