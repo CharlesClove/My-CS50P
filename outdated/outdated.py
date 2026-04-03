@@ -13,7 +13,7 @@ Months = [
     "November",
     "December"
 ]
-def my_soulution():
+def my_soulution(): # i made solution that accepts more formats, however course demanded that (example: October/9/1999) is wrong
 
     while(True):
         try:
@@ -39,22 +39,22 @@ def my_soulution():
 def main():
     while(True):
         try:
-            x = input("Date: ").strip()
-            if not x[0].isdigit():
-                m, d, y = x.split(" ")
-                if not d.endswith(','):
+            x = input("Date: ").strip() #strip input off spaces
+            if not x[0].isdigit(): #if first character is not a number
+                m, d, y = x.split(" ") #split into 3 variables based on space
+                if not d.endswith(','): #if d variable does not end with ',' reprompt
                     continue
-                d = d.replace(',', '')
-                d = int(d)
+                d = d.replace(',', '') #replace the ','
+                d = int(d) # turn days and years into ints from strings
                 y = int(y)
-                m = m.capitalize()
-                if (1 <= d <= 31):
+                m = m.capitalize() # capitalize to make sure it finds index of list
+                if (1 <= d <= 31): # if days are in correct limits of a month, print year, index of month in list and day with a separator
                     print(y, f'{Months.index(m)+1:02}',f'{d:02}', sep="-")
                     break
             else:
-                m, d, y = map(int, x.split("/"))
-                if 1 <= m <= 12 and 1 <= d <= 31:
-                    print(y, f'{m:02}',f'{d:02}', sep="-")
+                m, d, y = map(int, x.split("/")) #split based on '/' and map variables as ints in one go
+                if 1 <= m <= 12 and 1 <= d <= 31: #if norms are correct continue
+                    print(y, f'{m:02}',f'{d:02}', sep="-") #print date in requested format
                     break
         except ValueError:
             continue
