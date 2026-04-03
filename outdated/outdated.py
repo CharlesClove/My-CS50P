@@ -19,11 +19,11 @@ def main():
     while(True):
         try:
             date_input = re.split(', | |/',input("Date: ")) #using regex I split both dates that use slash spaces, etc
-            #January, 8, 1999 or 8
+            #January, 8, 1999 or 1/9/1999
             if len(date_input) != 3:
                 print("wrong format")
                 raise ValueError
-
+            
 
         except ValueError:
             continue
