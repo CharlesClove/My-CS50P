@@ -18,7 +18,7 @@ def main():
 
     while(True):
         try:
-            date_input = re.split(', | |/',input("Date: ").) #using regex I split both dates that use slash spaces, etc
+            date_input = re.split(', | |/',input("Date: ").strip()) #using regex I split both dates that use slash spaces, etc
             #January, 8, 1999 or 1/9/1999 logic for string month, logic for 2 and 3 postition to be a int
             if len(date_input) != 3:
                 raise ValueError
