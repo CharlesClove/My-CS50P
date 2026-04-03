@@ -22,7 +22,7 @@ def main():
             #January, 8, 1999 or 1/9/1999 logic for string month, logic for 2 and 3 postition to be a int
             if len(date_input) != 3:
                 raise ValueError
-
+            if date_input[0].
             if int(date_input[0]) > 12 or int(date_input[0]) < 0:
                 raise ValueError
 
