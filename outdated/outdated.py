@@ -24,12 +24,13 @@ def main():
                 raise ValueError
 
             if date_input[0] in Months:
-                word_to_number_month = Months.index(date_input[0])
+                word_to_number_month = str(Months.index(date_input[0])+1)
+                print(f"{date_input[2]}-{word_to_number_month.zfill(2)}-{date_input[1].zfill(2)}")
         except ValueError:
             continue
         except (EOFError):
             break
 
-    print(f"{date_input[2]}-{date_input[0]:02d}-{date_input[1]:02d}")
+    print(f"{date_input[2]}-{date_input[0].zfill(2)}-{date_input[1].zfill(2)}") #zfill is better than format as it helps assigning it to var
 
 main()
