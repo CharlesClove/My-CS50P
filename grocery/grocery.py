@@ -4,7 +4,7 @@ def main():
         try:
             g_item = input("Input: ")
             if g_item in g_list.keys():
-                
+                g_list.get(g_item)
             elif g_item not in g_list.keys():
                 g_list.setdefault(g_item,1)
         except EOFError:
