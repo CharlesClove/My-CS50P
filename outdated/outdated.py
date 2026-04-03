@@ -25,9 +25,14 @@ def main():
                 d = d.replace(',', '')
                 d = int(d)
                 y = int(y)
-                m = m.capitalize()
-                if m in a and (1 <= d <= 31):
+
+                if m in Months and (1 <= d <= 31):
                     print(y, f'{Months.index(m)+1:02}',f'{d:02}', sep="-")
+                    break
+            else:
+                m, d, y = map(int, x.split("/"))
+                if 1 <= m <= 12 and 1 <= d <= 31:
+                    print(y, f'{m:02}',f'{d:02}', sep="-")
                     break
 
         except (EOFError):
