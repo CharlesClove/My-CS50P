@@ -21,9 +21,10 @@ def main():
             date_input = re.split(', | |/',input("Date: ")) #using regex I split both dates that use slash spaces, etc
             #January, 8, 1999 or 1/9/1999
             if len(date_input) != 3:
-                print("wrong format")
                 raise ValueError
-            if 
+
+            if date_input[0] in Months:
+                
 
         except ValueError:
             continue
