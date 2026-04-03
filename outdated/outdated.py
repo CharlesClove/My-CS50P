@@ -1,3 +1,4 @@
+import re
 Months = [
     "January",
     "February",
@@ -14,10 +15,11 @@ Months = [
 ]
 
 def main():
+
     while(True):
         try:
-            date_input = input("Date: ")
-            
+            date_input = re.split(,input("Date: "))
+
 
         except (EOFError, ValueError):
             break
