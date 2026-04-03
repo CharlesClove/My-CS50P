@@ -30,11 +30,10 @@ def main():
                     print(y, f'{Months.index(m)+1:02}',f'{d:02}', sep="-")
                     break
             else:
-                m, d, y = map(int, x.split("/"))
+                m, d, y = map(int, di.split("/"))
                 if 1 <= m <= 12 and 1 <= d <= 31:
                     print(y, f'{m:02}',f'{d:02}', sep="-")
                     break
-
         except (EOFError):
             break
 main()
