@@ -18,11 +18,15 @@ def main():
 
     while(True):
         try:
-            date_input = re.split(',| ',input("Date: "))
-            print(date_input)
+            date_input = re.split(', | |/',input("Date: ")) #using regex I split both dates that use slash spaces, etc
+            if len(date_input) != 3:
+                print("wrong format")
+                raise ValueError
 
 
-        except (EOFError, ValueError):
+        except ValueError:
+            continue
+        except (EOFError):
             break
 
 main()
