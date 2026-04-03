@@ -10,7 +10,8 @@ def main():
                 g_list.setdefault(g_item,1)
         except EOFError:
             break
-    print(dict(sorted(g_list.items())))
-
+    sorted_dic = dict(sorted(g_list.items()))
+    for item, count in sorted_dic:
+        print("{} {}".format(count, item))
 
 main()
