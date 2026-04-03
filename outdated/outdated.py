@@ -30,6 +30,6 @@ def main():
         except (EOFError):
             break
 
-    print(f"{date_input[2]}-{date_input[0]:}-{date_input[1]:02}")
+    print(f"{date_input[2]}-{date_input[0]:02d}-{date_input[1]:02d}")
 
 main()
