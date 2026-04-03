@@ -10,6 +10,7 @@ def main():
                 g_list.setdefault(g_item,1)
         except EOFError:
             break
-    print(g_list.items())
+    for l_item in g_list:
+        print
 
 main()
