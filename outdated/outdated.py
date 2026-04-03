@@ -18,7 +18,8 @@ def main():
 
     while(True):
         try:
-            date_input = re.split(,input("Date: "))
+            date_input = re.split(',| ',input("Date: "))
+            print(date_input)
 
 
         except (EOFError, ValueError):
