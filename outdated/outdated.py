@@ -42,14 +42,14 @@ def main():
             x = input("Date: ").strip()
             if not x[0].isdigit():
                 m, d, y = x.split(" ")
-                if not d.endswith(','): 
+                if not d.endswith(','):
                     continue
                 d = d.replace(',', '')
                 d = int(d)
                 y = int(y)
                 m = m.capitalize()
-                if m in a and (1 <= d <= 31):
-                    print(y, f'{month_list.index(m)+1:02}',f'{d:02}', sep="-")
+                if (1 <= d <= 31):
+                    print(y, f'{Months.index(m)+1:02}',f'{d:02}', sep="-")
                     break
             else:
                 m, d, y = map(int, x.split("/"))
