@@ -4,6 +4,8 @@ def main():
             g_list = {}
             g_item = input("Input: ")
             if key in g_list:
+                g_list.get(key)+1
+            elif key not in g_list:
                 
 
 
