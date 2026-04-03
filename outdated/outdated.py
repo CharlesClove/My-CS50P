@@ -24,7 +24,7 @@ def main():
                 raise ValueError
 
             if date_input[0] in Months:
-                
+                word_to_number_month = 
 
         except ValueError:
             continue
