@@ -13,32 +13,6 @@ Months = [
     "November",
     "December"
 ]
-
-def main():
-    while(True):
-        try:
-            di = input("Date: ").strip()
-            if not di[0].isdigit():
-                m, d, y = di.split(" ")
-                if not d.endswith(',')
-                    continue
-                d = d.replace(',', '')
-                d = int(d)
-                y = int(y)
-
-                if m in Months and (1 <= d <= 31):
-                    print(y, f'{Months.index(m)+1:02}',f'{d:02}', sep="-")
-                    break
-            else:
-                m, d, y = map(int, di.split("/"))
-                if 1 <= m <= 12 and 1 <= d <= 31:
-                    print(y, f'{m:02}',f'{d:02}', sep="-")
-                    break
-        except (EOFError):
-            break
-main()
-
-
 def my_soulution():
 
     while(True):
@@ -61,5 +35,32 @@ def my_soulution():
             continue
         except (EOFError):
             break
+
+def main():
+    while(True):
+        try:
+            x = input("Date: ").strip()
+            if not x[0].isdigit():
+                m, d, y = x.split(" ")
+                if not d.endswith(','): 
+                    continue
+                d = d.replace(',', '')
+                d = int(d)
+                y = int(y)
+                m = m.capitalize()
+                if m in a and (1 <= d <= 31):
+                    print(y, f'{month_list.index(m)+1:02}',f'{d:02}', sep="-")
+                    break
+            else:
+                m, d, y = map(int, x.split("/"))
+                if 1 <= m <= 12 and 1 <= d <= 31:
+                    print(y, f'{m:02}',f'{d:02}', sep="-")
+                    break
+
+        except (EOFError):
+            break
+main()
+
+
 
 
