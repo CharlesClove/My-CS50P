@@ -11,6 +11,6 @@ def main():
                 g_list.setdefault(g_item,1)
         except EOFError:
             break
-        print(g_list)
+        print(dict(sorted(g_list.items())))
 
 main()
