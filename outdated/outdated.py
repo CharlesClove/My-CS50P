@@ -25,13 +25,11 @@ def main():
 
             if date_input[0] in Months:
                 word_to_number_month = Months.index(date_input[0])
-
-
         except ValueError:
             continue
         except (EOFError):
             break
-    for month, day, year in date_input:
-    print("{}-{}-{}".format(year, month, day))
+
+    print(f"{date_input[2]}-{date_input[0]:02}-{date_input[1]:02}")
 
 main()
