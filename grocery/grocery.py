@@ -11,7 +11,7 @@ def main():
         except EOFError:
             break
     sorted_dic = dict(sorted(g_list.items()))
-    for item, amount in sorted_dic:
+    for item, amount in sorted_dic.items():
         print("{} {}".format(amount, item))
 
 main()
