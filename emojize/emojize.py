@@ -1,4 +1,4 @@
 import emoji
-
-print(emoji.emojize('Python is :thumbs_up:'))
+inputstr = input("Input: ")
+print(emoji.emojize(f'Output: {inputstr}'))
 
