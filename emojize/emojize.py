@@ -9,8 +9,10 @@ def matching_str(match):
 
 inputstr = input("Input: ")#I need to 'catch' string between ::
 match = re.match(r":\w*:", inputstr)
-split_str = inputstr.split(match.group(), 1)
+matching_str(match)
+split_str = inputstr.split(match.group())
+print(split_str)
 
-#matching_str(match)
+#
 #print(emoji.emojize(f'Output: {inputstr}'))
 
