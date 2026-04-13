@@ -1,7 +1,9 @@
 import emoji
 import re
-pattern = ""
-inputstr = input("Input: ")#I need to 'catch' string between ::
 
-print(emoji.emojize(f'Output: {inputstr}'))
+inputstr = input("Input: ")#I need to 'catch' string between ::
+match = re.match(":*:", inputstr)
+if match:
+    print(match.group(1))
+#print(emoji.emojize(f'Output: {inputstr}'))
 
