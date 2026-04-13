@@ -2,7 +2,7 @@ import emoji
 import re
 
 inputstr = input("Input: ")#I need to 'catch' string between ::
-match = re.match(r":._*:", inputstr)
+match = re.match(r":\w*:", inputstr)
 if match:
     print(match.group())
 else:
