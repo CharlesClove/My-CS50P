@@ -3,3 +3,5 @@ import pyfiglet
 #print(f)
 
 import argprase
+
+parser = argparse.ArgumentParser()
