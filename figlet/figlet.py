@@ -4,9 +4,13 @@ import pyfiglet
 
 import argparse
 
-# parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()
+
 # parser.add_argument('x',type=int) #must be used, the int is accessed in args.x
 # praser.add_argument('--optional', help='its purely optional to use it', type=str, default=0, action="count")
-# args = parser.parse_args()
+parser.add_argument('text', type=str)
+parser.add_argument('-f','--font', help="lets you pick font")
+
+args = parser.parse_args()
 # print(args.x)
 
