@@ -12,5 +12,5 @@ parser.add_argument('text', type=str)
 parser.add_argument('-f','--font', help="lets you pick font")
 
 args = parser.parse_args()
-print(args.text)
+print(pyfiglet.figlet_format(args.text, font=random()))
 
