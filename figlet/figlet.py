@@ -22,3 +22,5 @@ figlet.setFont(font=random.choice(figfonts))
 print(
     figlet.renderText(args.text))
 
+print(args.)
+
