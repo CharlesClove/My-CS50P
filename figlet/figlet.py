@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser()
 # parser.add_argument('x',type=int) #must be used, the int is accessed in args.x
 # praser.add_argument('--optional', help='its purely optional to use it', type=str, default=0, action="count")
 parser.add_argument('text', type=str)
-parser.add_argument('-f','--font', help="lets you pick font")
+parser.add_argument('-f','--font', help="lets you pick font", type=str, action="store_true")
 
 args = parser.parse_args()
 
