@@ -3,7 +3,7 @@
 #print(f)
 import random
 from pyfiglet import Figlet
-
+random.seed()
 figlet = Figlet()
 figfonts = figlet.getFonts()
 
@@ -18,5 +18,6 @@ parser.add_argument('-f','--font', help="lets you pick font")
 
 args = parser.parse_args()
 print(
-    figlet.renderText(figlet.setFont(font=random.choice(figfonts))))
+    figlet.renderText(
+        figlet.setFont(font=random.choice(figfonts))))
 
