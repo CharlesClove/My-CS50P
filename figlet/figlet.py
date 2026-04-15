@@ -20,5 +20,5 @@ args = parser.parse_args()
 
 figlet.setFont(font=random.choice(figfonts))
 print(
-    figlet.renderText())
+    figlet.renderText(args.text))
 
