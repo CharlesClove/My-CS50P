@@ -1,6 +1,11 @@
 import pyfiglet
 #f = pyfiglet.figlet_format("TEXT", font ="slant")
 #print(f)
+import random
+from pyfiglet import Figlet
+
+figlet = Figlet()
+figfonts = figlet.getFonts()
 
 import argparse
 
