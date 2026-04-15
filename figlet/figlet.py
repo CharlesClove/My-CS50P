@@ -1,4 +1,4 @@
-import pyfiglet
+#import pyfiglet
 #f = pyfiglet.figlet_format("TEXT", font ="slant")
 #print(f)
 import random
@@ -17,5 +17,5 @@ parser.add_argument('text', type=str)
 parser.add_argument('-f','--font', help="lets you pick font")
 
 args = parser.parse_args()
-print(pyfiglet.figlet_format(args.text, font=random()))
+print(figlet.setFont(args.text,font=random.choice(figfonts)))
 
