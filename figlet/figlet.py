@@ -17,5 +17,6 @@ parser.add_argument('text', type=str)
 parser.add_argument('-f','--font', help="lets you pick font")
 
 args = parser.parse_args()
-print(figlet.setFont(args.text,font=random.choice(figfonts)))
+print(
+    figlet.renderText(figlet.setFont(font=random.choice(figfonts))))
 
