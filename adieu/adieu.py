@@ -7,4 +7,6 @@ while(True):
         list_of_names.append(inputted_name)
     except EOFError:
         break
-print(len(list_of_names))
+#list stores names , len returns number of names inside
+if not list_of_names:
+    
