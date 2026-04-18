@@ -1,4 +1,4 @@
-
+import sys
 list_of_names=[]
 
 while(True):
@@ -10,3 +10,5 @@ while(True):
 #list stores names , len returns number of names inside
 if not list_of_names:
     print("List cannot be empty!")
+    sys.exit()
+
