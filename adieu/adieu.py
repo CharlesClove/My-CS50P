@@ -9,4 +9,4 @@ while(True):
         break
 #list stores names , len returns number of names inside
 if not list_of_names:
-    
+    print("List cannot be empty!")
