@@ -7,4 +7,4 @@ while(True):
         list_of_names.append(inputted_name)
     except EOFError:
         break
-
+print(len(list_of_names))
