@@ -13,7 +13,7 @@ if not list_of_names:
     sys.exit()
 
 for i in range(len(list_of_names)-1):
-    if i = 1:
+    if i == 1:
         adieu_string += list_of_names[i]
     else:
         adieu_string += ", ".join(list_of_string[i])
