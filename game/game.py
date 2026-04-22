@@ -4,6 +4,8 @@ def main():
     while(True):
         try:
             userInputLimit = int(input("Level: "))
+            if userInputLimit <= 0:
+                raise ValueError
         except ValueError:
             continue
         break
