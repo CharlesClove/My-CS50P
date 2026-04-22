@@ -13,9 +13,10 @@ def main():
             userInputGuess = int(input("Guess: "))
         except ValueError:
             continue
-        break
+
         if userInputGuess == randomNumber:
             print("Just right!")
+            
         elif userInputGuess > randomNumber:
             print("Too large!")
         elif userInputGuess < randomNumber:
