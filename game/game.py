@@ -16,7 +16,7 @@ def main():
 
         if userInputGuess == randomNumber:
             print("Just right!")
-            
+            break
         elif userInputGuess > randomNumber:
             print("Too large!")
         elif userInputGuess < randomNumber:
