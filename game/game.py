@@ -1,11 +1,16 @@
 import random
-def guess(randomNumber, userInput):
-    pass
 def main():
     random.seed()
-    userInputLimit = ("Level: ")
-    randomNumber = random.randint(1,userInputLimit)
-    while(True):
-        
+    userInputLimit = input("Level: ",int)
+    print(userInputLimit)
+    #randomNumber = random.randint(1,userInputLimit)
+    # while(True):
+    #     userInputGuess = ("Guess: ")
+    #     if userInputGuess == randomNumber:
+    #         print("Just right!")
+    #     elif userInputGuess > randomNumber:
+    #         print("Too large!")
+    #     elif userInputGuess < randomNumber:
+    #         print("Too large!")
 
 main()
