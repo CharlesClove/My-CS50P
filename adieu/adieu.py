@@ -1,6 +1,6 @@
 import sys
 list_of_names=[]
-
+adieu_string = "Adieu, adieu, to "
 while(True):
     try:
         inputted_name = input("Name: ")
