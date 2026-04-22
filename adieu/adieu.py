@@ -15,5 +15,7 @@ if not list_of_names:
     sys.exit()
 elif len(list_of_names) == 1:
     print(f"{list_of_names[0]}")
+elif len(list_of_names) == 2:
+    print(f"{list_of_names[0]} and {list_of_names[len(list_of_names)-1]}")
 else:
-    print(f"{list_of_names[0]}{", ".join(list_of_names[1:-1])} and {list_of_names[len(list_of_names)]}")
+    print(f"{adieu_string}{list_of_names[0]}{", ".join(list_of_names[1:-1])}, and {list_of_names[len(list_of_names)-1]}")
