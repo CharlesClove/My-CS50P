@@ -1,8 +1,9 @@
 import random
-def guess():
+def guess(randomNumber, userInput):
     pass
 def main():
     random.seed()
-    randomNumber = random.randint()
-    print(randomNumber)
+    randomNumber = random.randint(1,100)
+    while(True):
+        
 main()
