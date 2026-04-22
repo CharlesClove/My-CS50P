@@ -8,14 +8,15 @@ while(True):
         inputted_name = input("Name: ")
         list_of_names.append(inputted_name)
     except EOFError:
+        print()
         break
 #list stores names , len returns number of names inside
 if not list_of_names:
     print("List cannot be empty!")
     sys.exit()
 elif len(list_of_names) == 1:
-    print(f"{list_of_names[0]}")
+    print(f"{adieu_string}{list_of_names[0]}")
 elif len(list_of_names) == 2:
-    print(f"{list_of_names[0]} and {list_of_names[len(list_of_names)-1]}")
+    print(f"{adieu_string}{list_of_names[0]} and {list_of_names[len(list_of_names)-1]}")
 else:
     print(f"{adieu_string}{list_of_names[0]}{", ".join(list_of_names[1:-1])}, and {list_of_names[len(list_of_names)-1]}")
