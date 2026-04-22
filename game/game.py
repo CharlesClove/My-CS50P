@@ -20,6 +20,6 @@ def main():
         elif userInputGuess > randomNumber:
             print("Too large!")
         elif userInputGuess < randomNumber:
-            print("Too large!")
+            print("Too small!")
 
 main()
