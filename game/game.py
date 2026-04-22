@@ -3,6 +3,6 @@ def guess():
     pass
 def main():
     random.seed()
-    randomNumber = random.getstate()
+    randomNumber = random.randint()
     print(randomNumber)
 main()
