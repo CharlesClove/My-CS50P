@@ -1,7 +1,6 @@
 import sys
 list_of_names=[]
 adieu_string = "Adieu, adieu, to "
-in_list_name_counter = 0
 
 while(True):
     try:
@@ -11,6 +10,7 @@ while(True):
         print()
         break
 #list stores names , len returns number of names inside
+
 if not list_of_names:
     print("List cannot be empty!")
     sys.exit()
