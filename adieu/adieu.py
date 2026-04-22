@@ -13,8 +13,7 @@ while(True):
 if not list_of_names:
     print("List cannot be empty!")
     sys.exit()
-
-
-
-
-print(f"{list_of_names[1]}{", ".join(list_of_names[1:-1])} and {list_of_names[len(list_of_names)]}")
+elif len(list_of_names) == 1:
+    print(f"{list_of_names[0]}")
+else:
+    print(f"{list_of_names[0]}{", ".join(list_of_names[1:-1])} and {list_of_names[len(list_of_names)]}")
