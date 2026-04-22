@@ -13,6 +13,8 @@ def main():
     while(True):
         try:
             userInputGuess = int(input("Guess: "))
+            if userInputGuess <= 0:
+                raise ValueError
         except ValueError:
             continue
 
