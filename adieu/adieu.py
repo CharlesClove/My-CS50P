@@ -17,4 +17,4 @@ if not list_of_names:
 
 
 
-print(f"{list_of_names[1]}{", ".join(list_of_names)}")
+print(f"{list_of_names[1]}{", ".join(list_of_names[1:-1])} and {list_of_names[len(list_of_names)]}")
