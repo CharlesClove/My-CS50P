@@ -9,7 +9,11 @@ def main():
         break
     randomNumber = random.randint(1,userInputLimit)
     while(True):
-        userInputGuess = input("Guess: ")
+        try:
+            userInputGuess = int(input("Guess: "))
+        except ValueError:
+            continue
+        break
         if userInputGuess == randomNumber:
             print("Just right!")
         elif userInputGuess > randomNumber:
