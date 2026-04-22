@@ -17,6 +17,5 @@ for i in range(len(list_of_names)-1):
     if i == 0:
         adieu_string += list_of_names[i]
     else:
-        adieu_string += ", ".join(list_of_string[i])
-
+        ", ".join()
 print(adieu_string)
