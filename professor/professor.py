@@ -9,13 +9,26 @@ import random
 # Prompts the user to solve each of those problems. If an answer is not correct (or not even a number), the program should output EEE and prompt the user again, allowing the user up to three tries in total for that problem. If the user has still not answered correctly after three tries, the program should output the correct answer.
 # The program should ultimately output the user’s score: the number of correct answers out of 10.
 # Structure your program as follows, wherein get_level prompts (and, if need be, re-prompts) the user for a level and returns 1, 2, or 3, and generate_integer returns a single randomly generated non-negative integer with level digits or raises a ValueError if level is not 1, 2, or 3:
-
+import random
 def main():
+    random.seed()
+    level = get_level()
+    generate_integer(level)
+
     ...
 
 
 def get_level():
-    ...
+    Choices = [1,2,3]
+    while(True):
+        try:
+            userInputLevel = int(input("Level: "))
+            if userInputLevel not in Choices:
+                raise ValueError
+        except ValueError:
+            continue
+        break
+    return userInputLevel
 
 
 def generate_integer(level):
