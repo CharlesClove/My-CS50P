@@ -32,7 +32,17 @@ def get_level():
 
 
 def generate_integer(level):
-    ...
+    if level == 1:
+        randomPair = random.randint(1,99)
+        ...
+    elif level == 2:
+        randomPair = random.randint(1,99)
+        ...
+    elif level ==3:
+        randomPair = random.randint(1,99)
+        ...
+
+
 
 
 if __name__ == "__main__":
