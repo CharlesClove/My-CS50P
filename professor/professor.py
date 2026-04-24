@@ -17,7 +17,8 @@ def main():
     randomPairs = generate_integer(level)
     try:
         for pair in randomPairs:
-            print(f"{pair.key}+{pair.value} = ")
+            for f,s in pair:
+                print(f"{f}+{s} = ")
     except ValueError:
         print("EEE")
 
