@@ -10,6 +10,7 @@ import random
 # The program should ultimately output the user’s score: the number of correct answers out of 10.
 # Structure your program as follows, wherein get_level prompts (and, if need be, re-prompts) the user for a level and returns 1, 2, or 3, and generate_integer returns a single randomly generated non-negative integer with level digits or raises a ValueError if level is not 1, 2, or 3:
 import random
+
 def main():
     random.seed()
     level = get_level()
