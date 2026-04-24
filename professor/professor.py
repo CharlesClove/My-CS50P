@@ -16,8 +16,9 @@ def main():
     randomPairs = generate_integer(level)
     try:
         for pair in randomPairs:
-            print(f"{pair}+{}")
-
+            print(f"{pair.key}+{pair.value} = ")
+    except ValueError:
+        print("EEE")
 
 def get_level():
     Choices = [1,2,3]
