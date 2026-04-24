@@ -13,9 +13,10 @@ import random
 def main():
     random.seed()
     level = get_level()
-    generate_integer(level)
-
-    ...
+    randomPairs = generate_integer(level)
+    try:
+        for pair in randomPairs:
+            print(f"{pair}+{}")
 
 
 def get_level():
@@ -30,23 +31,17 @@ def get_level():
         break
     return userInputLevel
 
-
 def generate_integer(level):
     randomPairs=[]
     for i in range(9):
         if level == 1:
             randomPair = [random.randint(1,9),random.randint(1,9)]
-            ...
         elif level == 2:
             randomPair = [random.randint(10,99), random.randint(10,99)]
-            ...
         elif level ==3:
             randomPair = [random.randint(100,999), random.randint(100,999)]
-            ...
         randomPairs.append(randomPair)
     return randomPairs
-
-
 
 if __name__ == "__main__":
     main()
