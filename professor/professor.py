@@ -16,9 +16,8 @@ def main():
     level = get_level()
     randomPairs = generate_integer(level)
     try:
-        for pair in enumerate(randomPairs):
-            for f,s in pair:
-                print(f"{f}+{s} = ")
+        for pair in randomPairs:
+            print(f"{pair.key}{}")
     except ValueError:
         print("EEE")
 
@@ -43,7 +42,7 @@ def generate_integer(level):
             randomPair = [random.randint(10,99), random.randint(10,99)]
         elif level ==3:
             randomPair = [random.randint(100,999), random.randint(100,999)]
-        randomPairs.append(randomPair)
+        randomPairs.update(randomPair)
     return randomPairs
 
 if __name__ == "__main__":
