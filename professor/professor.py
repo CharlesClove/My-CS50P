@@ -35,7 +35,7 @@ def get_level():
     return userInputLevel
 
 def generate_integer(level):
-    randomPairs=[]
+    randomPairs={}
     for i in range(9):
         if level == 1:
             randomPair = [random.randint(1,9),random.randint(1,9)]
