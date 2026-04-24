@@ -16,9 +16,9 @@ def main():
     level = get_level()
     randomPairs = generate_integer(level)
     try:
-        for pair in enumerate(randomPairs):
-            for f,s in pair:
-                print(f"{f}+{s} = ")
+        for f,s in randomPairs:
+             print(f"{f} + {s} = ")
+             
     except ValueError:
         print("EEE")
 
