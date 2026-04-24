@@ -15,12 +15,20 @@ def main():
     random.seed()
     level = get_level()
     randomPairs = generate_integer(level)
-    try:
-        for f,s in randomPairs:
-             print(f"{f} + {s} = ")
-             
-    except ValueError:
-        print("EEE")
+
+    errorCounter = 3
+    for f,s in randomPairs:
+        try:
+            print(f"{f} + {s} = ")
+            userAnwser = int(input())
+            if userAnwser.is_integer() == False:
+                raise ValueError
+            if userAnwser != (f + s):
+                errorCounter-1
+                if errorCounter == 0:
+                    raise ValueError
+        except ValueError:
+            print("EEE")
 
 def get_level():
     Choices = [1,2,3]
