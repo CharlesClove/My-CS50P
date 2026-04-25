@@ -51,7 +51,7 @@ def get_level():
 def generate_integer(level):
     for i in range(10):
         if level == 1:
-            random = random.randint(0,9)'
+            random = random.randint(0,9)
             return random
         elif level == 2:
             random = random.randint(10,99)
