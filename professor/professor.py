@@ -21,8 +21,7 @@ def main():
     for f,s in randomPairs:
         for attempt in range(3):
             try:
-                print(f"{f} + {s} = ")
-                userAnwser = int(input())
+                userAnwser = int(input(f"{f} + {s} = "))
                 if userAnwser.is_integer() == False:
                     raise ValueError
                 if userAnwser != (f + s):
@@ -51,7 +50,7 @@ def get_level():
 
 def generate_integer(level):
     randomPairs=[]
-    for i in range(1):
+    for i in range(9):
         if level == 1:
             randomPair = [random.randint(1,9),random.randint(1,9)]
         elif level == 2:
