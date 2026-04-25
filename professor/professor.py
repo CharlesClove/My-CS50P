@@ -25,10 +25,10 @@ def main():
                 raise ValueError
             if userAnwser != (f + s):
                 errorCounter-1
-                if errorCounter == 0:
-                    raise ValueError
         except ValueError:
             print("EEE")
+            if errorCounter == 0:
+                
 
 def get_level():
     Choices = [1,2,3]
