@@ -15,15 +15,12 @@ def main():
     random.seed()
     level = get_level()
     randomPairs = generate_integer(level)
-
-    errorCounter = 3
     points = 10
     for f,s in randomPairs:
+        errorCounter = 3
         for attempt in range(3):
             try:
                 userAnwser = int(input(f"{f} + {s} = "))
-                if userAnwser.is_integer() == False:
-                    raise ValueError
                 if userAnwser != (f + s):
                     errorCounter -= 1
                     raise ValueError
