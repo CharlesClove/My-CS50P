@@ -28,7 +28,7 @@ def main():
                     errorCounter -= 1
                     raise ValueError
                 else:
-                    
+                    break
             except ValueError:
                 if errorCounter == 0:
                     print(f"{f} + {s} = {f+s}")
