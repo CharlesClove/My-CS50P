@@ -32,7 +32,7 @@ def main():
             except ValueError:
                 if errorCounter == 0:
                     print(f"{f} + {s} = {f+s}")
-                    points-1
+                    points-=1
                 else:
                     print("EEE")
                     continue
