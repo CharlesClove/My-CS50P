@@ -19,20 +19,22 @@ def main():
     errorCounter = 3
     points = 10
     for f,s in randomPairs:
-        try:
-            for attempt in range(3):
+        for attempt in range(3):
+            try:
                 print(f"{f} + {s} = ")
                 userAnwser = int(input())
                 if userAnwser.is_integer() == False:
                     raise ValueError
                 if userAnwser != (f + s):
                     errorCounter-1
-        except ValueError:
-            if errorCounter == 0:
-                print(f"{f} + {s} = {f+s}")
-                points-1
-            else:
-                print("EEE")
+                    raise ValueError
+            except ValueError:
+                if errorCounter == 0:
+                    print(f"{f} + {s} = {f+s}")
+                    points-1
+                else:
+                    print("EEE")
+                    continue
 
 
 def get_level():
@@ -49,7 +51,7 @@ def get_level():
 
 def generate_integer(level):
     randomPairs=[]
-    for i in range(2):
+    for i in range(1):
         if level == 1:
             randomPair = [random.randint(1,9),random.randint(1,9)]
         elif level == 2:
