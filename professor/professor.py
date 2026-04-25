@@ -12,7 +12,7 @@ import random
 import random
 
 def main():
-    random.seed()
+    #random.seed()
     level = get_level()
     points = 10
     for _ in range(10):
