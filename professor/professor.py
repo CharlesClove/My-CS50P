@@ -27,6 +27,8 @@ def main():
                 if userAnwser != (f + s):
                     errorCounter -= 1
                     raise ValueError
+                else:
+                    
             except ValueError:
                 if errorCounter == 0:
                     print(f"{f} + {s} = {f+s}")
