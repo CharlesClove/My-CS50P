@@ -36,7 +36,7 @@ def main():
                 else:
                     print("EEE")
                     continue
-
+    print(f"Score:{points}")
 
 def get_level():
     Choices = [1,2,3]
