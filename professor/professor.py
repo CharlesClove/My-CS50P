@@ -51,16 +51,16 @@ def get_level():
     return userInputLevel
 
 def generate_integer(level):
-    randomPairs=[]
-    for i in range(9):
+    for i in range(10):
         if level == 1:
-            randomPair = [random.randint(1,9),random.randint(1,9)]
+            random = random.randint(0,9)'
+            return random
         elif level == 2:
-            randomPair = [random.randint(10,99), random.randint(10,99)]
+            random = random.randint(10,99)
+            return random
         elif level ==3:
-            randomPair = [random.randint(100,999), random.randint(100,999)]
-        randomPairs.append(randomPair)
-    return randomPairs
+            random = random.randint(100,999)
+            return random
 
 if __name__ == "__main__":
     main()
