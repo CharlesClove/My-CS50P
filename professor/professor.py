@@ -26,7 +26,7 @@ def main():
                 if userAnwser.is_integer() == False:
                     raise ValueError
                 if userAnwser != (f + s):
-                    errorCounter-1
+                    errorCounter -= 1
                     raise ValueError
             except ValueError:
                 if errorCounter == 0:
