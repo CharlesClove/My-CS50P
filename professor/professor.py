@@ -20,12 +20,13 @@ def main():
     points = 10
     for f,s in randomPairs:
         try:
-            print(f"{f} + {s} = ")
-            userAnwser = int(input())
-            if userAnwser.is_integer() == False:
-                raise ValueError
-            if userAnwser != (f + s):
-                errorCounter-1
+            for attempt in range(3):
+                print(f"{f} + {s} = ")
+                userAnwser = int(input())
+                if userAnwser.is_integer() == False:
+                    raise ValueError
+                if userAnwser != (f + s):
+                    errorCounter-1
         except ValueError:
             if errorCounter == 0:
                 print(f"{f} + {s} = {f+s}")
