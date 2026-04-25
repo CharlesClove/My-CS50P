@@ -14,9 +14,10 @@ import random
 def main():
     random.seed()
     level = get_level()
-    randomPairs = generate_integer(level)
     points = 10
-    for f,s in randomPairs:
+    for _ in range(10):
+        f = generate_integer(level)
+        s = generate_integer(level)
         errorCounter = 3
         for attempt in range(3):
             try:
