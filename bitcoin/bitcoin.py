@@ -3,7 +3,7 @@ import sys
 import requests
 
 parser = argparse.ArgumentParser() #create praser from argprase library
-parser.add_argument('amount',help="lets you pick font", type=float)  #add font argument as a
+parser.add_argument('amount',help="write amount of bitcoin to see value in $")  #add font argument as a
 
 def main():
     try:
