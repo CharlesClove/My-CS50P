@@ -18,5 +18,10 @@ def main():
         print("Command-line argument is not a number")
         sys.exit(2)
 
+    try:
+        r.requests.get()
+    except requests.RequestException:
+    ...
+
 
 main()
