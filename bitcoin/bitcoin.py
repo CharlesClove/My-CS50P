@@ -8,6 +8,11 @@ parser.add_argument('amount',help="lets you pick font", type=float)  #add font a
 def main():
     try:
         args = parser.parse_args()
+        if args.amount is None:
+            raise ValueError
     except SystemExit as e:
+        print("Missing command-line argument")
+    except ValueError as e:
         
+
 main()
