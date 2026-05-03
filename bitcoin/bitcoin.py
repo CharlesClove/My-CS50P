@@ -11,8 +11,8 @@ def main():
         if args.amount is None:
             raise ValueError
     except SystemExit as e:
-        print("Missing command-line argument")
+        print("Command-line argument is not a number")
     except ValueError as e:
-        
+        print("Missing command-line argument")
 
 main()
