@@ -21,10 +21,11 @@ def main():
     try:
         r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=25406b28524673f63ad7bc9c901b056265b01de076fd9ef72dc6eebb30f5b905")
         response = r.json()
-        print(response["data.priceUsd"])
+        bitcoinPrice = response["data"]["priceUsd"]
     except requests.RequestException:
         print("Api error")
         sys.exit(3)
-
+    amountToDollars = amount*float(bitcoinPrice)
+    print(f"${amountToDollars}")
 
 main()
