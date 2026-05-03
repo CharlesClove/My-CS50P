@@ -19,9 +19,12 @@ def main():
         sys.exit(2)
 
     try:
-        r.requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=25406b28524673f63ad7bc9c901b056265b01de076fd9ef72dc6eebb30f5b905")
+        r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=25406b28524673f63ad7bc9c901b056265b01de076fd9ef72dc6eebb30f5b905")
+        response = r.json()
+        print(response.)
     except requests.RequestException:
-    ...
+        print("Api error")
+        sys.exit(3)
 
 
 main()
