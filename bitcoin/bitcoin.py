@@ -16,7 +16,7 @@ def main():
         amount = float(args.amount)
     except ValueError:
         print("Command-line argument is not a number")
-        sys.exit(2)
+        sys.exit(1)
 
     try:
         r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=25406b28524673f63ad7bc9c901b056265b01de076fd9ef72dc6eebb30f5b905")
