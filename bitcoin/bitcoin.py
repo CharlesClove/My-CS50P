@@ -19,9 +19,9 @@ def main():
         sys.exit(1)
 
     try:
-        r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=25406b28524673f63ad7bc9c901b056265b01de076fd9ef72dc6eebb30f5b905")
+        r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=xxxxxx")
         response = r.json()
-        bitcoinPrice = response["data"]["priceUsd"]
+        bitcoinPrice = response["data"]["priceUsd"] #how to get into nested json data :D
     except requests.RequestException:
         print("Api error")
         sys.exit(3)
