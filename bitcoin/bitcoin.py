@@ -8,12 +8,15 @@ parser.add_argument('amount',help="write amount of bitcoin to see value in $")  
 def main():
     try:
         args = parser.parse_args()
-        if not isinstance(args.amount, float):
-            raise ValueError
-    except SystemExit as e:
+    except SystemExit:
         print("Missing command-line argument")
-    except ValueError as e:
+        sys.exit(1)
+
+    try:
+        amount = float(args.amount)
+    except ValueError:
         print("Command-line argument is not a number")
+        sys.exit(2)
 
 
 main()
