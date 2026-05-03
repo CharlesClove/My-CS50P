@@ -26,6 +26,6 @@ def main():
         print("Api error")
         sys.exit(3)
     amountToDollars = amount*float(bitcoinPrice)
-    print(f"${amountToDollars}.%f3")
+    print(f"${amountToDollars%,.2f}")
 
 main()
