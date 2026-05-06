@@ -1,11 +1,12 @@
 def main():
-    greeting = input("Greeting: ").lower().strip()
+    greeting = input("Greeting: ")
     print(value(greeting))
 
 def value(greeting):
-    if greeting.lower().startswith('hello'):
+    greeting = greeting.lower().strip()
+    if greeting.startswith('hello'):
         return '$0'
-    elif greeting[0].lower() == "h":
+    elif greeting[0] == "h":
         return '$20'
     else:
         return '$100'
