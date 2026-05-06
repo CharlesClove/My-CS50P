@@ -5,7 +5,7 @@ def main():
 def value(greeting):
     if greeting.lower().startswith('hello'):
         return '$0'
-    elif greeting[0] == "h" or "H":
+    elif greeting[0] == 'h' or greeting[0] == 'H':
         return '$20'
     else:
         return '$100'
