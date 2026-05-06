@@ -1,11 +1,14 @@
-u_input = input("Greeting: ").lower().strip().split()
+def main():
+    u_input = input("Greeting: ").lower().strip().split()
+    print(value(u_input))
 
-def solution(u_input):
+def value(greeting):
     if u_input[0].startswith('hello'):
-        print('$0')
+        return '$0'
     elif str(u_input[0])[0] == "h":
-        print('$20')
+        return '$20'
     else:
-        print('$100')
+        return '$100'
 
-solution(u_input)
+if __name__ == "__main__":
+    main()
