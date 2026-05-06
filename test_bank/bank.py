@@ -1,9 +1,9 @@
 def main():
-    u_input = str(input("Greeting: ").lower().strip().split())
-    print(value(u_input))
+    greeting = str(input("Greeting: ").strip().split())
+    print(value(greeting))
 
 def value(greeting):
-    if greeting.startswith('hello'):
+    if greeting.lower().startswith('hello'):
         return '$0'
     elif greeting[0] == "h":
         return '$20'
