@@ -5,7 +5,7 @@ def shorten(var_string):
     var_cut_string = ""
 
     for iteration in range(len(var_string)):
-        print(f"{vovels.find(var_string[iteration])} To jest wynik dla vovels.find ")
+        #print(f"{vovels.find(var_string[iteration])} To jest wynik dla vovels.find ")
         if vovels.find(var_string[iteration]) != -1: #vovels.find() != -1 returns true if character is in string vovels
             var_cut_string += var_string[iteration].replace(var_string[iteration], "")
         else:
