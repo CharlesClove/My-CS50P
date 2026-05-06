@@ -1,4 +1,4 @@
-def cut_vovels(var_string):
+def shorten(var_string):
 
     vovels = "aeiouAEIOU"
     var_cut_string = ""
@@ -15,7 +15,8 @@ def cut_vovels(var_string):
 
 def main():
     to_cut = input("Input: ")
-    cut_string = cut_vovels(to_cut)
+    cut_string = shorten(to_cut)
     print(f"Output: {cut_string}")
 
-main()
+if __name__ == "__main__":
+    main()
