@@ -3,7 +3,7 @@ def main():
     print(value(u_input))
 
 def value(greeting):
-    if u_input[0].startswith('hello'):
+    if .startswith('hello'):
         return '$0'
     elif str(u_input[0])[0] == "h":
         return '$20'
