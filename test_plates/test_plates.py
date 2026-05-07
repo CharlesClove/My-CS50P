@@ -2,9 +2,12 @@ import pytest
 from plates import *
 
 def test_plates():
-    assert is_valid("AA") == True
-    assert is_valid("A2") == False
-
-    assert is_valid("2A") == False
-    assert is_valid("22") == False
-    assert is_valid(" 2") == False
+    assert is_valid("HELLO") == True
+    assert is_valid("Hello") == True
+    assert is_valid("AAA222") == True
+    assert is_valid("AAA22A") == False
+    assert is_valid("GOODBYE") == False
+    assert is_valid("goodbye") == False
+    assert is_valid("222222") == False
+    assert is_valid("2AAAAA") == False
+    assert is_valid(" AAAAA") == False
