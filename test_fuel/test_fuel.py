@@ -8,5 +8,7 @@ def test_gague():
     with pytest.raises(ValueError):
         convert("cat/dog")
         convert("-1/100")
-    # with pytest.raises(ZeroDivisionError):
+        convert("-10/-100")
+        convert("10/5")
+    with pytest.raises(ZeroDivisionError):
         convert("25/0")
