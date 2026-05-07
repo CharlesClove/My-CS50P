@@ -1,8 +1,8 @@
 import argphrase
 
 def main():
-    praser 
-    ...
+    praser
+        ...
 
 if __name__ == "__main__":
-    main()
+        main()
