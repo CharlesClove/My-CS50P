@@ -10,11 +10,6 @@ def gauge(percentage):
     else:
         return percentage
 
-def percentage(fraction):
-    #print(f"3 {amount}  {type(amount)}")
-
-
-
 def main():
     while(True):
         try:
