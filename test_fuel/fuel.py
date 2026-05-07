@@ -1,3 +1,10 @@
+def convert(fraction):
+    ...
+
+
+def gauge(percentage):
+    ...
+
 def percentage(fraction):
     #print(f"3 {amount}  {type(amount)}")
     if amount >= 99:
