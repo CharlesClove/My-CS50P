@@ -9,4 +9,5 @@ def test_plates():
     assert is_valid("GOODBYE") == False
     assert is_valid("goodbye") == False
     assert is_valid("") == False
-    assert
+    assert is_valid("2A") == False
+    assert is_valid(" 2") == False
