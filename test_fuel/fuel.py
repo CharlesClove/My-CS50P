@@ -8,7 +8,7 @@ def gauge(percentage):
     elif percentage <= 1:
         return ("E")
     else:
-        return percentage
+        return f"{percentage}%"
 
 def main():
     while(True):
@@ -25,7 +25,7 @@ def main():
             continue
         break
     #print(f"3{amount}  {type(amount)}")
-    print(percentage(round(fraction)))
+    print(gauge(round(fraction)))
 
 if __name__ == "__main__":
     main()
