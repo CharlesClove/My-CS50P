@@ -14,3 +14,4 @@ def test_plates():
     assert is_valid("123456789") == False
     assert is_valid("CS50") == True
     assert is_valid("CS50P") == False
+    assert is_valid("CS05") == False
