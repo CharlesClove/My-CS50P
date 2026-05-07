@@ -3,16 +3,16 @@ def convert(fraction):
 
 
 def gauge(percentage):
-    ...
+    if percentage >= 99:
+        return ("F")
+    elif percentage <= 1:
+        return ("E")
+    else:
+        return percentage
 
 def percentage(fraction):
     #print(f"3 {amount}  {type(amount)}")
-    if amount >= 99:
-        return ("F")
-    elif amount <= 1:
-        return ("E")
-    else:
-        return (f"{amount}%")
+
 
 
 def main():
