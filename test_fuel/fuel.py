@@ -2,6 +2,8 @@ def convert(fraction):
     x, y = fraction.split('/')
     x = float(x)
     y = float(y)
+    if y == 0:
+        raise ZeroDivisionError
     if x < 0 or x > y or x.is_integer() != True or y.is_integer() != True:
         raise ValueError
     return (x/y)*100
