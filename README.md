@@ -1,10 +1,10 @@
-# 🐍 My CS50P — Harvard's Introduction to Programming with Python
+# My CS50P — Harvard's Introduction to Programming with Python
 
 Solutions to Harvard's [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/) course.
 
 ---
 
-## 📦 Progress
+##  Progress
 
 | Week | Topic | Problems | Status |
 |------|-------|----------|--------|
@@ -60,7 +60,7 @@ My-CS50P/
 
 ---
 
-## 🚀 Running a solution
+##  Running a solution
 
 ```bash
 cd <problem_folder>
