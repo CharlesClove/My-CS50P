@@ -21,7 +21,7 @@ Solutions to Harvard's [CS50's Introduction to Programming with Python](https://
 
 ---
 
-## 📁 Structure
+##  Structure
 
 Each problem has its own folder with `*.py` solution file(s) and a `test_*.py` where applicable.
 
@@ -75,6 +75,6 @@ pytest test_<problem>.py
 
 ---
 
-## 📜 Academic Honesty
+## Academic Honesty
 
 Solutions are my own work, submitted in accordance with [CS50's Academic Honesty policy](https://cs50.harvard.edu/python/honesty/). This repo is shared for portfolio purposes only — please don't copy solutions if you're currently taking the course.
